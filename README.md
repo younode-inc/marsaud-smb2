@@ -78,19 +78,6 @@ smb2Client.disconnect();
 
 ### High level methods
 
-> `smb2Client.ensureDir ( path, callback )`
-
-Ensures that the directory exists. If the directory structure does not exist, it is created.
-
-Example:
-
-```javascript
-smb2Client.ensureDir('path\\to\\directory', function(err) {
-  if (err) throw err;
-  console.log('directory structure has been created');
-});
-```
-
 > `smb2Client.exists ( path, callback )`
 
 Test whether or not the given path exists by checking with the file system.

@@ -20,8 +20,6 @@
     "url": "https://github.com/marsaud/node-smb2"
   },
   "dependencies": {
-    "babel-runtime": "^5.8.34",
-    "bluebird": "^3.5.3",
     "ntlm": "~0.1.1"
   },
   "keywords": [
@@ -33,12 +31,9 @@
     "Samba"
   ],
   "scripts": {
-    "build": "./node_modules/.bin/babel --source-maps --out-dir=lib/api/ lib/api/src",
-    "prepublish": "npm run build",
     "test": "eslint ./lib"
   },
   "devDependencies": {
-    "babel": "^5.8.34",
     "eslint": "^5.9.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-config-standard": "^12.0.0",
