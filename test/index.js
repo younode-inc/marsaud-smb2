@@ -14,7 +14,7 @@ const dir = 'smb2-tests-' + Date.now();
 const file = dir + '\\file.txt';
 const data = Buffer.from(
   Array.from({ length: 1024 }, function() {
-    return Math.round(Math.random() * 255);
+    return Math.floor(Math.random() * 256);
   })
 );
 
