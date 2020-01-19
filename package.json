@@ -14,6 +14,7 @@
   "contributors": [
     "Fabrice Marsaud <fabrice.marsaud@vates.fr> (https://github.com/marsaud)"
   ],
+  "types": "index.d.ts",
   "main": "lib/smb2.js",
   "repository": {
     "type": "git",
