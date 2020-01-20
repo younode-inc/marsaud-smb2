@@ -1,3 +1,5 @@
+'use strict';
+
 const asyncFn = require('promise-toolbox/asyncFn');
 const defer = require('golike-defer').default;
 const finished = require('readable-stream').finished;
