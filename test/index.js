@@ -58,12 +58,12 @@ const tests = {
       const fd = yield client.open(file, 'r');
       $d.call(client, 'close', fd);
 
-      t.same(
-        yield getStream.buffer(
-          yield client.createReadStream('', { autoClose: false, fd })
-        ),
-        data
-      );
+      const readStream = yield client.createReadStream('', {
+        autoClose: false,
+        fd,
+      });
+      t.same(yield getStream.buffer(readStream), data);
+      t.same(readStream.fileSize, data.length);
     })
   ),
   createWriteStream: defer(
