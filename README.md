@@ -219,9 +219,9 @@ smb2Client.writeFile('path\\to\\my\\file.txt', 'Hello Node', function(err) {
 
 > `smb2Client.truncate ( filename, length, callback )`
 
--   `filename` String
--   `length` Number
--   `callback` Function
+- `filename` String
+- `length` Number
+- `callback` Function
 
 Asynchronously truncate a file to a size of precisely length bytes.
 
@@ -229,8 +229,8 @@ Example:
 
 ```javascript
 smb2Client.truncate('path\\to\\my\\file.txt', 10, function(err) {
-    if (err) throw err;
-    console.log("It's truncated!");
+  if (err) throw err;
+  console.log("It's truncated!");
 });
 ```
 
