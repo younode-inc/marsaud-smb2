@@ -6,8 +6,9 @@ interface ISMB2Options {
   domain: string;
   password: string;
   port?: number;
-  packetConcurrrency?: number;
+  packetConcurrency?: number;
   autoCloseTimeout?: number;
+  debug?: boolean;
 }
 
 interface ICreateReadStreamOptions {
